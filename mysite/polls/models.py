@@ -16,7 +16,6 @@ class Question(models.Model):
     def __str__(self) -> str:
         return self.question_text
 
-
 class Choice(models.Model):
 
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
